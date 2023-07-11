@@ -9,6 +9,16 @@ const http =require('http');
 //         content:"Content1",
 //         important:true
 //     },
+//     {
+//         id:2,
+//         content:"Content2",
+//         important:true
+//     },
+//     {
+//         id:3,
+//         content:"Content3",
+//         important:true
+//     }
 // ];
 const app=http.createServer((request,response)=>{
     response.writeHead(200,{'Content-Type':'text/html'})
