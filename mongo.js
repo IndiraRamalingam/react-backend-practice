@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 //console.log(process.argv);
 
-const url=`mongodb+srv://indiraramalingam93:arul8793@cluster0.5hvky8w.mongodb.net/NotesDB?retryWrites=true&w=majority`;
+//const url=``;
 
 mongoose.connect(url)
     .then(() => {
