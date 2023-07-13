@@ -1,7 +1,5 @@
-//console.log("Hello World");
 
-//Simple web server
-
+require('dotenv').config();
 const express=require('express');
 const app= express();
 const mongoose = require('mongoose');
@@ -11,7 +9,7 @@ app.use(express.json());
 
 //console.log(process.argv);
 
-const url=`mongodb+srv://indiraramalingam93:arul8793@cluster0.5hvky8w.mongodb.net/NotesDB?retryWrites=true&w=majority`;
+const url=process.env.ATLAS_URI;
 
 mongoose.connect(url)
     .then(() => {
